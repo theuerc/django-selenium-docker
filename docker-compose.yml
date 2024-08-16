@@ -4,7 +4,7 @@ services:
     build: .
     volumes:
       - ".:/home/django/project"
-    links:
+    depends_on:
       - selenium
     ports:
       - 8000:8000
